@@ -3,14 +3,7 @@ import Navigation from "../components/Navigation";
 import Logo from "../components/Logo";
 
 const About = () => {
-  return (
-    <div>
-      <Logo />
-      <Navigation />
-      <h1>A propos</h1>
-      <br />
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sit hic
+  const about_text = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sit hic
         doloremque. Optio atque autem sed vitae est? Cupiditate odit aliquid
         molestiae facilis ullam eos excepturi nisi a, dolorem quidem! Eos
         tempore voluptates et facere. Doloremque suscipit id temporibus quisquam
@@ -42,8 +35,14 @@ const About = () => {
         doloremque. Doloribus nobis vero labore. Repudiandae magnam enim facere,
         quas fugiat iste animi quis, eligendi modi quam cupiditate sunt qui
         temporibus eius ab provident maxime atque recusandae cum, alias culpa
-        pariatur ipsam amet. Aliquid, doloribus?
-      </p>
+        pariatur ipsam amet. Aliquid, doloribus?`;
+  return (
+    <div>
+      <Logo />
+      <Navigation />
+      <h1>A propos</h1>
+      <br />
+      <p>{about_text}</p>
       <br />
     </div>
   );

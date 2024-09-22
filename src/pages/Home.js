@@ -1,16 +1,8 @@
 import React from "react";
-import Navigation from "../components/Navigation";
-import Logo from "../components/Logo";
-import Countries from "../components/Countries";
+import Layout from "../components/Layout";
 
 const Home = () => {
-  return (
-    <div>
-      <Logo />
-      <Navigation />
-      <Countries />
-    </div>
-  );
+  return <Layout />;
 };
 
 export default Home;
