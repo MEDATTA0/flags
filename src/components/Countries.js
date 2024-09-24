@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
+import Button from "./Button";
 
 const Countries = () => {
   const [data, setData] = useState([]);
@@ -40,9 +41,7 @@ const Countries = () => {
         ))}
       </ul>
       {selectedRadio && (
-        <button onClick={() => setSelectedRadio("")}>
-          Annuler la recherche
-        </button>
+        <Button text="Annuler la recherche" color="red" fn={setSelectedRadio} />
       )}
       <ul>
         {data
